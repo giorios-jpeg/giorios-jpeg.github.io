@@ -348,3 +348,9 @@ textarea {
     padding-right: 16px;
   }
 }
+.site-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
