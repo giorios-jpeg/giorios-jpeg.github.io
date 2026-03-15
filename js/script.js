@@ -144,3 +144,11 @@ function initPrintsPage() {
 initMenuToggle();
 initGalleryPage();
 initPrintsPage();
+const links = document.querySelectorAll('.site-nav a, .mobile-nav a');
+const currentPage = window.location.pathname.split("/").pop();
+
+links.forEach(link => {
+  if (link.getAttribute("href") === currentPage) {
+    link.classList.add("is-active");
+  }
+});
