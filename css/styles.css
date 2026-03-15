@@ -365,3 +365,7 @@ textarea {
   max-width: 100%;
   object-fit: contain;
 }
+.site-nav a.is-active,
+.mobile-nav a.is-active {
+  font-weight: 600;
+}
