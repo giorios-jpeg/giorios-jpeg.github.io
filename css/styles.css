@@ -41,6 +41,8 @@ textarea {
   font: inherit;
 }
 
+/* HEADER */
+
 .site-header {
   padding: 18px 24px;
 }
@@ -52,6 +54,14 @@ textarea {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
+}
+
+.site-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 .site-title,
@@ -67,20 +77,12 @@ textarea {
   text-transform: uppercase;
 }
 
-.site-title {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 34px;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  white-space: nowrap;
-}
-
 .site-nav a {
   font-size: 15px;
   font-weight: 400;
-  text-decoration: none;
-  color: inherit;
 }
+
+/* NAV LINKS */
 
 .site-nav a,
 .mobile-nav a,
@@ -105,14 +107,16 @@ textarea {
   font-weight: 600;
 }
 
+/* HAMBURGER */
+
 .menu-toggle {
   display: none;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  gap: 4px;
-  width: 24px;
-  height: 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 28px;
+  height: 28px;
   background: transparent;
   border: 0;
   padding: 0;
@@ -121,11 +125,12 @@ textarea {
 
 .menu-toggle span {
   display: block;
-  width: 18px;
-  height: 1.5px;
+  width: 22px;
+  height: 2px;
   background: var(--text);
-  transition: transform 0.2s ease, opacity 0.2s ease;
 }
+
+/* MOBILE NAV */
 
 .mobile-nav {
   display: none;
@@ -140,6 +145,8 @@ textarea {
   padding: 8px 0;
 }
 
+/* PAGE WRAP */
+
 .page-wrap {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -149,6 +156,8 @@ textarea {
 .page-wrap--narrow {
   max-width: var(--narrow-width);
 }
+
+/* HERO */
 
 .hero-main {
   max-width: 900px;
@@ -167,12 +176,16 @@ textarea {
   object-fit: contain;
 }
 
+/* TEXT LIST */
+
 .text-list {
   display: flex;
   flex-direction: column;
   gap: 18px;
   padding-top: 48px;
 }
+
+/* GALLERY */
 
 .gallery-header {
   display: flex;
@@ -205,6 +218,8 @@ textarea {
   aspect-ratio: 4 / 5;
   object-fit: cover;
 }
+
+/* LIGHTBOX */
 
 .lightbox {
   position: fixed;
@@ -239,6 +254,8 @@ textarea {
   cursor: pointer;
 }
 
+/* ABOUT + CONTACT */
+
 .about-layout,
 .contact-layout {
   display: grid;
@@ -257,6 +274,8 @@ textarea {
 .print-notes {
   color: var(--muted);
 }
+
+/* PRINTS */
 
 .prints-layout {
   display: grid;
@@ -306,6 +325,8 @@ textarea {
   cursor: default;
 }
 
+/* CONTACT FORM */
+
 .contact-form {
   display: grid;
   gap: 18px;
@@ -322,7 +343,6 @@ textarea {
   border: 1px solid var(--line);
   background: transparent;
   padding: 12px;
-  border-radius: 0;
 }
 
 .contact-form input:focus,
@@ -331,7 +351,10 @@ textarea {
   border-color: var(--text);
 }
 
+/* TABLET */
+
 @media (max-width: 900px) {
+
   .prints-layout,
   .print-item {
     grid-template-columns: 1fr;
@@ -340,15 +363,19 @@ textarea {
   .print-notes {
     order: -1;
   }
+
 }
 
+/* MOBILE */
+
 @media (max-width: 760px) {
+
   .site-nav {
     display: none;
   }
 
   .menu-toggle {
-    display: inline-flex;
+    display: flex;
   }
 
   .mobile-nav.is-open {
@@ -369,4 +396,5 @@ textarea {
     padding-left: 16px;
     padding-right: 16px;
   }
+
 }
