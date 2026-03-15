@@ -68,6 +68,10 @@ textarea {
 }
 
 .site-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
   white-space: nowrap;
 }
 
@@ -96,16 +100,31 @@ textarea {
   opacity: 0.55;
 }
 
-.site-nav .is-active {
-  opacity: 0.55;
+.site-nav a.is-active,
+.mobile-nav a.is-active {
+  font-weight: 600;
 }
 
 .menu-toggle {
   display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+  width: 24px;
+  height: 24px;
   background: transparent;
   border: 0;
   padding: 0;
   cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 18px;
+  height: 1.5px;
+  background: var(--text);
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .mobile-nav {
@@ -142,7 +161,9 @@ textarea {
 }
 
 .hero-image {
-  max-height: 82vh;
+  max-height: 78vh;
+  width: auto;
+  max-width: 100%;
   object-fit: contain;
 }
 
@@ -348,24 +369,4 @@ textarea {
     padding-left: 16px;
     padding-right: 16px;
   }
-}
-.site-title {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 34px;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-}
-.site-nav a.active,
-.mobile-nav a.active {
-  font-weight: 600;
-}
-.hero-image {
-  max-height: 78vh;
-  width: auto;
-  max-width: 100%;
-  object-fit: contain;
-}
-.site-nav a.is-active,
-.mobile-nav a.is-active {
-  font-weight: 600;
 }
