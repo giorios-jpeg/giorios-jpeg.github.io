@@ -355,3 +355,7 @@ textarea {
   font-weight: 600;
   letter-spacing: 0.02em;
 }
+.site-nav a.active,
+.mobile-nav a.active {
+  font-weight: 600;
+}
