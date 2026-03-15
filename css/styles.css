@@ -359,3 +359,9 @@ textarea {
 .mobile-nav a.active {
   font-weight: 600;
 }
+.hero-image {
+  max-height: 78vh;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
